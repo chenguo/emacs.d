@@ -17,7 +17,7 @@
 
 ;; Share clipboard
 (setq x-select-enable-clipboard t)
- (setq interprogram-paste-function 'x-cut-buffer-or-selection-value)
+(setq interprogram-paste-function 'x-selection-value)
 
 ;; Search
 (setq search-highlight t)
@@ -25,3 +25,7 @@
 
 ;; Disable erasing entire buffer
 (put 'erase-buffer 'disabled nil)
+
+;; Mochiscript as javascript
+(setq auto-mode-alist (cons '("\\.ms$" . javascript-mode) auto-mode-alist))
+(setq js-indent-level 2)
