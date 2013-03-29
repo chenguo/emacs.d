@@ -1,9 +1,9 @@
 (load "~/.emacs.d/zenburn-theme.el")
 
 ;; Turn off clunky UI
-(if (fboundp 'scroll-bar-mode) (scroll-bar-mode nil))
-(if (fboundp 'tool-bar-mode) (tool-bar-mode nil))
-(if (fboundp 'menu-bar-mode) (menu-bar-mode nil))
+(if (fboundp 'scroll-bar-mode) (scroll-bar-mode 0))
+(if (fboundp 'tool-bar-mode) (tool-bar-mode 0))
+(if (fboundp 'menu-bar-mode) (menu-bar-mode 0))
 
  ;; Column number mode
 (setq-default column-number-mode t)
@@ -23,8 +23,6 @@
 (show-paren-mode t)
 
 ;; Italic comments
-;; (custom-set-faces
-;;  '(font-lock-comment-face ((t (:foreground "Cyan" :slant italic)))))
 (custom-set-faces
  '(font-lock-comment-face ((t (:slant italic)))))
 

@@ -25,3 +25,7 @@
 
 ;; Disable erasing entire buffer
 (put 'erase-buffer 'disabled nil)
+
+;; Mochiscript as javascript
+(setq auto-mode-alist (cons '("\\.ms$" . javascript-mode) auto-mode-alist))
+(setq js-indent-level 2)
