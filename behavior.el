@@ -25,3 +25,6 @@
 
 ;; Disable erasing entire buffer
 (put 'erase-buffer 'disabled nil)
+
+; Display current function
+(setq which-func-mode t)
