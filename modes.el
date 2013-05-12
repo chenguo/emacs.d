@@ -10,3 +10,6 @@
 (add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
 (add-to-list 'auto-mode-alist '("\\jade$" . jade-mode))
 
+;; Mochiscript as javascript
+(setq auto-mode-alist (cons '("\\.ms$" . javascript-mode) auto-mode-alist))
+(setq js-indent-level 2)
