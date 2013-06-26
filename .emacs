@@ -6,6 +6,7 @@
 ;(load "~/.emacs.d/cedet_cfg.el")
 (load "~/.emacs.d/ac_cfg.el")
 (load "~/.emacs.d/hacks.el")
+(load "~/.emacs.d/modes.el")
 
 ; Load nxhtml
 ;(load "~/.emacs.d/nxhtml/autostart")
