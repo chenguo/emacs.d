@@ -1,3 +1,15 @@
+; Packages
+(require 'package)
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/"))
+(package-initialize)
+
+(mapc
+ (lambda (package)
+   (or (package-installed-p package)
+       (package-install package)))
+ '(auto-complete clojure-mode nrepl ac-nrepl coffee-mode rainbow-delimiters))
+
 ;; Load settings
 (load "~/.emacs.d/appearance.el")
 (load "~/.emacs.d/behavior.el")
@@ -11,9 +23,3 @@
 ; Load nxhtml
 ;(load "~/.emacs.d/nxhtml/autostart")
 ;(setq mumamo-background-colors nil)
-
-; Marmalade
-(require 'package)
-(add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/"))
-(package-initialize)

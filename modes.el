@@ -1,8 +1,3 @@
-;; Clojure
-(load "~/.emacs.d/modes/clojure-mode.el")
-;;(load "~/.emacs.d/modes/clojure-test-mode.el")
-(load "~/.emacs.d/modes/clojurescript-mode.el")
-
 ;; Jade
 (add-to-list 'load-path "~/.emacs.d/modes")
 (require 'sws-mode)
@@ -13,3 +8,12 @@
 ;; Mochiscript as javascript
 (setq auto-mode-alist (cons '("\\.ms$" . javascript-mode) auto-mode-alist))
 (setq js-indent-level 2)
+
+;; 2-space indent for CoffeeScript
+(add-hook 'coffee-mode-hook (lambda () (setq tab-width 2)))
+
+;; nRepl
+(add-hook 'nrepl-interaction-mode-hook 'nrepl-turn-on-eldoc-mode)
+(setq nrepl-popup-stacktraces nil)
+(add-to-list 'same-window-buffer-names "*nrepl*")
+;(add-hook 'nrepl-mode-hook 'paredit-mode)

@@ -33,3 +33,6 @@
 ;; Show time
 (setq display_time-day-and-date t)
 (display-time)
+
+
+(global-rainbow-delimiters-mode)
