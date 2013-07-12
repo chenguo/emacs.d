@@ -8,7 +8,7 @@
  (lambda (package)
    (or (package-installed-p package)
        (package-install package)))
- '(auto-complete clojure-mode nrepl ac-nrepl coffee-mode rainbow-delimiters))
+ '(auto-complete clojure-mode nrepl ac-nrepl coffee-mode rainbow-delimiters magit))
 
 ;; Load settings
 (load "~/.emacs.d/appearance.el")
