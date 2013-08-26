@@ -17,3 +17,9 @@
 (setq nrepl-popup-stacktraces nil)
 (add-to-list 'same-window-buffer-names "*nrepl*")
 ;(add-hook 'nrepl-mode-hook 'paredit-mode)
+
+;; Java
+(add-to-list 'load-path "~/.emacs.d/auto-java-complete/")
+(require 'ajc-java-complete-config)
+(add-hook 'java-mode-hook 'ajc-java-complete-mode)
+(add-hook 'find-file-hook 'ajc-4-jsp-find-file-hook)
