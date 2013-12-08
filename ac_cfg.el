@@ -49,3 +49,7 @@
 (add-hook 'nrepl-mode-hook 'ac-nrepl-setup)
 (add-hook 'nrepl-interaction-mode-hook 'ac-nrepl-setup)
 (eval-after-load "auto-complete" '(add-to-list 'ac-modes 'nrepl-mode))
+
+;; Coffeescript
+(add-to-list 'load-path "~/.emacs.d/ac-coffee")
+(require 'ac-coffee)

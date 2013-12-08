@@ -9,7 +9,7 @@
   '("\\` " "^\*Mess" "^\*Back" ".*Completion" "^\*Ido" "^\*trace"
 
      "^\*compilation" "^\*GTAGS" "^session\.*" "^\*")
-  ido-work-directory-list '("~/" "~/Desktop" "~/Documents" "~src")
+  ido-work-directory-list '("~/")
   ido-case-fold  t                 ; be case-insensitive
 
   ido-enable-last-directory-history t ; remember last used dirs
