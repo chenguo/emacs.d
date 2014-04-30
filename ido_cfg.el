@@ -9,7 +9,8 @@
   '("\\` " "^\*Mess" "^\*Back" ".*Completion" "^\*Ido" "^\*trace"
 
      "^\*compilation" "^\*GTAGS" "^session\.*" "^\*")
-  ido-work-directory-list '("~/")
+  ;; ido-work-directory-list-ignore-regexps '("\.*")
+  ido-work-directory-list '("~/ ~/code/")
   ido-case-fold  t                 ; be case-insensitive
 
   ido-enable-last-directory-history t ; remember last used dirs

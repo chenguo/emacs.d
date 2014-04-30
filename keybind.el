@@ -10,11 +10,10 @@
 
 ;; Aliases
 (defalias 'qrr' query-replace-regexp)
+(defalias 'e' eshell)
 
 ;; Windmove (shift+direction for swiching buffers)
 (when (fboundp 'windmove-default-keybindings)
       (windmove-default-keybindings))
-(global-set-key (kbd "C-S-b") 'windmove-left)
-(global-set-key (kbd "C-S-f") 'windmove-right)
-(global-set-key (kbd "C-S-p") 'windmove-up)
-(global-set-key (kbd "C-S-n") 'windmove-down)
+;; Shift + Up key misinterpretted in terminal
+(define-key input-decode-map "\e[1;2A" [S-up])

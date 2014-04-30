@@ -34,3 +34,6 @@
 ;; Disable erasing entire buffer
 (put 'erase-buffer 'disabled nil)
 
+;; Handle buffers with the same name
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'forward)
