@@ -6,3 +6,4 @@ auto-save-list
 cache
 cedet-1.1
 nxhtml
+elpa/*

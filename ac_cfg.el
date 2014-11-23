@@ -5,6 +5,7 @@
 
 ;; Enable auto-complete for PHP
 (add-to-list 'ac-modes 'php-mode)
+(add-to-list 'ac-modes 'clojure-mode)
 
 ;; etags support to auto-complete. taken from
 ;;  http://www.emacswiki.org/emacs-en/download/auto-complete-etags.el
@@ -42,3 +43,13 @@
 
 ;; (add-hook 'c-mode-common-hook (lambda () (ac-semantic-trigger '("\\." "->"))))
 ;; (add-hook 'php-mode-hook (lambda () (ac-semantic-trigger '("->"))))
+
+;; Clojure
+(require 'ac-nrepl)
+(add-hook 'nrepl-mode-hook 'ac-nrepl-setup)
+(add-hook 'nrepl-interaction-mode-hook 'ac-nrepl-setup)
+(eval-after-load "auto-complete" '(add-to-list 'ac-modes 'nrepl-mode))
+
+;; Coffeescript
+(add-to-list 'load-path "~/.emacs.d/ac-coffee")
+(require 'ac-coffee)

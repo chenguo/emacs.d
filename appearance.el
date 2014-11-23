@@ -23,8 +23,6 @@
 (show-paren-mode t)
 
 ;; Italic comments
-;; (custom-set-faces
-;;  '(font-lock-comment-face ((t (:foreground "Cyan" :slant italic)))))
 (custom-set-faces
  '(font-lock-comment-face ((t (:slant italic)))))
 
@@ -35,3 +33,6 @@
 ;; Show time
 (setq display_time-day-and-date t)
 (display-time)
+
+
+(global-rainbow-delimiters-mode)
