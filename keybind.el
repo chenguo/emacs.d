@@ -4,13 +4,13 @@
 (global-set-key "\C-c\C-m" 'execute-extended-command)
 
 ;; Set backwards kill
-(global-set-key "\C-w" 'backward-kill-word)
 (global-set-key "\C-x\C-k" 'kill-region)
 (global-set-key "\C-c\C-k" 'kill-region)
 
 ;; Aliases
 (defalias 'qrr' query-replace-regexp)
 (defalias 'e' eshell)
+(defalias 'm' magit-status)
 
 ;; Windmove (shift+direction for swiching buffers)
 (when (fboundp 'windmove-default-keybindings)
