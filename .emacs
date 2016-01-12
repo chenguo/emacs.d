@@ -2,8 +2,8 @@
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/"))
-;; (add-to-list 'package-archives
-;;              '("marmalade" . "http://marmalade-repo.org/packages/"))
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
 (when (not package-archive-contents)
@@ -12,7 +12,7 @@
  (lambda (package)
    (or (package-installed-p package)
        (package-install package)))
- '(auto-complete clojure-mode coffee-mode rainbow-delimiters magit magit-filenotify magit-log-edit helm))
+ '(auto-complete clojure-mode coffee-mode rainbow-delimiters magit ac-nrepl js2-mode))
 
 ;; Load settings
 (load "~/.emacs.d/appearance.el")
