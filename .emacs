@@ -19,7 +19,8 @@
    magit-log-edit
    ac-nrepl
    js2-mode
-   swift-mode))
+   swift-mode
+   thrift))
 
 ;; Load settings
 (load "~/.emacs.d/appearance.el")
