@@ -40,3 +40,5 @@
 ;; Handle buffers with the same name
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'forward)
+
+(setq tab-width 2)
