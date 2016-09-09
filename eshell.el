@@ -34,3 +34,4 @@
 (add-hook 'eshell-preoutput-filter-functions
           'color-escape-replace)
 
+(setq eshell-aliases-file "~/.emacs.d/eshell/alias")
