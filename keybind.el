@@ -17,3 +17,6 @@
       (windmove-default-keybindings))
 ;; Shift + Up key misinterpretted in terminal
 (define-key input-decode-map "\e[1;2A" [S-up])
+
+;; Ace window
+(global-set-key (kbd "M-p") 'ace-window)
