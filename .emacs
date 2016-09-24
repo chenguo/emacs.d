@@ -12,14 +12,19 @@
        (package-install package)))
  '(auto-complete
    clojure-mode
+   cmake-font-lock
+   cmake-ide
+   cmake-mode
    coffee-mode
    rainbow-delimiters
+   ace-window
    magit
    magit-filenotify
-   magit-log-edit
    ac-nrepl
    js2-mode
    swift-mode
+   haskell-mode
+   protobuf-mode
    thrift))
 
 ;; Load settings
