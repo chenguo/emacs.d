@@ -16,11 +16,9 @@
    cmake-ide
    cmake-mode
    coffee-mode
-   rainbow-delimiters
    ace-window
    magit
    magit-filenotify
-   ac-nrepl
    js2-mode
    swift-mode
    haskell-mode

@@ -35,4 +35,4 @@
 (display-time)
 
 
-(global-rainbow-delimiters-mode)
+(require 'rainbow-delimiters)
