@@ -42,3 +42,8 @@
 (setq uniquify-buffer-name-style 'forward)
 
 (setq tab-width 2)
+
+;; Nightly maintenance
+(require 'midnight)
+
+(midnight-delay-set 'midnight-delay "4:30am")

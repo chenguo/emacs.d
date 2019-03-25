@@ -236,7 +236,7 @@
         "pvalues" "quot" "rand" "rand-int" "range"
         "ratio?" "rational?" "rationalize" "re-find" "re-groups"
         "re-matcher" "re-matches" "re-pattern" "re-seq" "read"
-        "read-line" "read-string" "reify" "reduce" "ref" "ref-history-count"
+        "read-line" "read-string" "reify" "reduce" "reduce-kv" "ref" "ref-history-count"
         "ref-max-history" "ref-min-history" "ref-set" "refer" "refer-clojure"
         "release-pending-sends" "rem" "remove" "remove-method" "remove-ns"
         "repeat" "repeatedly" "replace" "replicate"
@@ -1265,6 +1265,10 @@ The arguments are dir, hostname, and port.  The return value should be an `alist
   (add-to-list 'auto-mode-alist '("\\.clj$" . clojure-mode))
   (add-to-list 'interpreter-mode-alist '("jark" . clojure-mode))
   (add-to-list 'interpreter-mode-alist '("cake" . clojure-mode)))
+
+;; Midje facts
+(put-clojure-indent 'facts 1)
+(put-clojure-indent 'fact 1)
 
 (provide 'clojure-mode)
 

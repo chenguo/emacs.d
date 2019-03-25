@@ -29,3 +29,10 @@
 ;; (require 'ajc-java-complete-config)
 ;; (add-hook 'java-mode-hook 'ajc-java-complete-mode)
 ;; (add-hook 'find-file-hook 'ajc-4-jsp-find-file-hook)
+
+;; Go
+(add-hook 'go-mode-hook
+          (lambda ()
+            ;;(add-hook 'before-save-hook 'gofmt-before-save)
+            (setq tab-width 2)
+            (setq indent-tabs-mode nil)))

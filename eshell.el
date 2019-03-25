@@ -5,7 +5,7 @@
 ;; Paths
 (defun eshell-mode-hook-func ()
   (setq eshell-path-env (concat "$HOME/bin:$HOME/.rvm/scripts/rvm:$HOME/.nvm/:" eshell-path-env))
-  (setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin"))
+  (setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin:/usr/local/hadoop/bin"))
   (define-key eshell-mode-map (kbd "M-s") 'other-window-or-split))
 
 (add-hook 'eshell-mode-hook 'eshell-mode-hook-func)

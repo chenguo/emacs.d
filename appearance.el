@@ -3,7 +3,7 @@
 ;; Turn off clunky UI
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode 0))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode 0))
-(if (fboundp 'menu-bar-mode) (menu-bar-mode 0))
+;(if (fboundp 'menu-bar-mode) (menu-bar-mode 0))
 
  ;; Column number mode
 (setq-default column-number-mode t)
