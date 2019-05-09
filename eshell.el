@@ -9,6 +9,8 @@
   (define-key eshell-mode-map (kbd "M-s") 'other-window-or-split))
 
 (add-hook 'eshell-mode-hook 'eshell-mode-hook-func)
+(add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
+(add-to-list 'comint-output-filter-functions 'ansi-color-process-output)
 
 ;; Implement some (very) basic missing terminal escape codes
 ;; (let ((overwrite-start -1)
@@ -35,3 +37,4 @@
           'color-escape-replace)
 
 (setq eshell-aliases-file "~/.emacs.d/eshell/alias")
+

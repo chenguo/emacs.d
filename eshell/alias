@@ -1,4 +1,12 @@
 alias nil  $*
+alias grep grep --color=auto $*
+;alias ls ls --color=auto $1
+alias l ls -CF
+alias la ls -A
+alias ll ls -alF
+alias clear recenter 0
+alias emacs find-file-other-window $1
+alias e find-file-other-window $1
 alias :name $*
 alias e find-file-other-window $1
 alias emacs find-file-other-window $1
