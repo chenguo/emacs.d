@@ -12,6 +12,7 @@
        (package-install package)))
  '(auto-complete
    clojure-mode
+   cider
    cmake-font-lock
    cmake-ide
    cmake-mode
@@ -20,12 +21,13 @@
    magit
    magit-filenotify
    js2-mode
-   swift-mode
-   haskell-mode
    protobuf-mode
    scala-mode
    thrift
-   projectile))
+   projectile
+   smex
+   flx-ido
+   ido-vertical-mode))
 
 ;; Load settings
 (load "~/.emacs.d/appearance.el")
@@ -47,7 +49,7 @@
  '(display-time-mode t)
  '(package-selected-packages
    (quote
-    (scala-mode projectile thrift swift-mode rainbow-delimiters protobuf-mode magit-filenotify macrostep js2-mode haskell-mode groovy-mode gradle-mode go-mode coffee-mode cmake-ide cmake-font-lock clojure-mode auto-complete ace-window)))
+    (smex git-commit ido-vertical-mode flx-ido magit cider clojure-mode-extra-font-locking scala-mode projectile thrift swift-mode rainbow-delimiters protobuf-mode magit-filenotify macrostep js2-mode haskell-mode groovy-mode gradle-mode go-mode coffee-mode cmake-ide cmake-font-lock clojure-mode auto-complete ace-window)))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces

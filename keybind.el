@@ -8,7 +8,6 @@
 (global-set-key "\C-c\C-k" 'kill-region)
 
 ;; Aliases
-(defalias 'qrr' query-replace-regexp)
 (defalias 'e' eshell)
 (defalias 'm' magit-status)
 

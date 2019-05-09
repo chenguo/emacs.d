@@ -1,0 +1,28 @@
+
+;; ----- smex-history -----
+(
+ rgrep
+ run-lisp
+ m
+ e
+ pwd
+ query-replace-regexp
+ c++-mode
+)
+
+;; ----- smex-data -----
+(
+ (e . 376)
+ (m . 321)
+ (rgrep . 121)
+ (query-replace-regexp . 17)
+ (pwd . 54)
+ (c++-mode . 12)
+ (untabify . 1)
+ (json-pretty-print . 2)
+ (rename-buffer . 2)
+ (calc . 1)
+ (kmacro-call-ring-2nd-repeat . 1)
+ (json-pretty-print-buffer . 1)
+ (run-lisp . 9)
+)
