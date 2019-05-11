@@ -8,3 +8,7 @@
   (eval-after-load "tramp-compat"
     '(add-to-list 'byte-compile-not-obsolete-vars
                   'font-lock-beginning-of-syntax-function)))
+
+;; Ugh OSX
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize))

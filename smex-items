@@ -1,22 +1,22 @@
 
 ;; ----- smex-history -----
 (
- rgrep
- run-lisp
- m
- e
+ cider-jack-in
  pwd
- query-replace-regexp
- c++-mode
+ e
+ package-list-packages
+ package-autoremove
+ m
+ rgrep
 )
 
 ;; ----- smex-data -----
 (
- (e . 376)
+ (e . 388)
  (m . 321)
- (rgrep . 121)
+ (rgrep . 123)
  (query-replace-regexp . 17)
- (pwd . 54)
+ (pwd . 58)
  (c++-mode . 12)
  (untabify . 1)
  (json-pretty-print . 2)
@@ -25,4 +25,12 @@
  (kmacro-call-ring-2nd-repeat . 1)
  (json-pretty-print-buffer . 1)
  (run-lisp . 9)
+ (emacs-version . 1)
+ (cider-jack-in . 12)
+ (org-cancel-repeater . 1)
+ (package-install . 1)
+ (package-list-packages . 2)
+ (package-autoremove . 1)
+ (cider-quit . 8)
+ (cider-restart . 6)
 )
