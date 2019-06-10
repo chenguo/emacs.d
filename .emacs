@@ -27,7 +27,9 @@
    projectile
    smex
    flx-ido
-   ido-vertical-mode))
+   ido-vertical-mode
+   rainbow-delimiters
+   exec-path-from-shell))
 
 ;; Load settings
 (load "~/.emacs.d/appearance.el")
@@ -49,7 +51,7 @@
  '(display-time-mode t)
  '(package-selected-packages
    (quote
-    (exec-path-from-shell smex git-commit ido-vertical-mode flx-ido magit cider clojure-mode-extra-font-locking scala-mode projectile thrift swift-mode rainbow-delimiters protobuf-mode magit-filenotify macrostep js2-mode haskell-mode groovy-mode gradle-mode go-mode coffee-mode cmake-ide cmake-font-lock clojure-mode auto-complete ace-window)))
+    (exec-path-from-shell smex git-commit ido-vertical-mode flx-ido magit cider clojure-mode-extra-font-locking scala-mode projectile thrift swift-mode rainbow-delimiters protobuf-mode magit-filenotify macrostep js2-mode haskell-mode groovy-mode go-mode coffee-mode cmake-ide cmake-font-lock clojure-mode auto-complete ace-window)))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces
