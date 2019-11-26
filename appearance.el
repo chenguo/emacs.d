@@ -34,5 +34,4 @@
 (setq display_time-day-and-date t)
 (display-time)
 
-
 (require 'rainbow-delimiters)

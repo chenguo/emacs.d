@@ -10,8 +10,7 @@
  (lambda (package)
    (or (package-installed-p package)
        (package-install package)))
- '(auto-complete
-   clojure-mode
+ '(clojure-mode
    cider
    cmake-font-lock
    cmake-ide
@@ -43,7 +42,7 @@
 (load "~/.emacs.d/keybind.el")
 (load "~/.emacs.d/ido_cfg.el")
 ;(load "~/.emacs.d/cedet_cfg.el")
-(load "~/.emacs.d/ac_cfg.el")
+;(load "~/.emacs.d/ac_cfg.el")
 (load "~/.emacs.d/hacks.el")
 (load "~/.emacs.d/modes.el")
 (load "~/.emacs.d/eshell.el")
