@@ -1,6 +1,3 @@
-(require 'company-lsp)
-(push 'company-lsp company-backends)
-
 ;; Jade
 (add-to-list 'load-path "~/.emacs.d/modes")
 (require 'sws-mode)
@@ -40,31 +37,15 @@
             (setq tab-width 2)
             (setq indent-tabs-mode nil)))
 
-;; Typescript with LSP
-(defun setup-tide-mode ()
-  (interactive)
-  (tide-setup)
-  (flycheck-mode +1)
-  (setq flycheck-check-syntax-automatically '(save mode-enabled))
-  (eldoc-mode +1)
-  (tide-hl-identifier-mode +1)
-  ;; company is an optional dependency. You have to
-  ;; install it separately via package-install
-  ;; `M-x package-install [ret] company`
-  (company-mode +1)
-  (setq typescript-indent-level 2)
-  )
 
-;; aligns annotation to the right hand side
-(setq company-tooltip-align-annotations t)
+;; Typescript mode with LSP
+(require 'lsp-mode)
+(setq lsp-enable-snippet nil)
+(add-hook 'typescript-mode-hook
+          (lambda ()
+            (setq-default typescript-indent-level 2)
+            (lsp-deferred)))
 
-;; formats the buffer before saving
-(add-hook 'before-save-hook 'tide-format-before-save)
+(require 'company-lsp)
+(push 'company-lsp company-backends)
 
-(add-hook 'typescript-mode-hook #'setup-tide-mode)
-
-;; example of setting options
-;; https://github.com/Microsoft/TypeScript/blob/v3.3.1/src/server/protocol.ts#L2858-L2890
-(setq tide-format-options
-      '(:insertSpaceAfterFunctionKeywordForAnonymousFunctions t
-        :placeOpenBraceOnNewLineForFunctions nil))

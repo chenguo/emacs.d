@@ -30,7 +30,6 @@
    rainbow-delimiters
    exec-path-from-shell
    typescript-mode
-   tide
    lsp-mode
    lsp-treemacs
    company-lsp
