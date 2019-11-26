@@ -29,7 +29,13 @@
    flx-ido
    ido-vertical-mode
    rainbow-delimiters
-   exec-path-from-shell))
+   exec-path-from-shell
+   typescript-mode
+   tide
+   lsp-mode
+   lsp-treemacs
+   company-lsp
+   ))
 
 ;; Load settings
 (load "~/.emacs.d/appearance.el")
@@ -51,7 +57,7 @@
  '(display-time-mode t)
  '(package-selected-packages
    (quote
-    (exec-path-from-shell smex git-commit ido-vertical-mode flx-ido magit cider clojure-mode-extra-font-locking scala-mode projectile thrift swift-mode rainbow-delimiters protobuf-mode magit-filenotify macrostep js2-mode haskell-mode groovy-mode go-mode coffee-mode cmake-ide cmake-font-lock clojure-mode auto-complete ace-window)))
+    (company-lsp lsp-treemacs tide lsp-mode typescript-mod exec-path-from-shell smex git-commit ido-vertical-mode flx-ido magit cider clojure-mode-extra-font-locking scala-mode projectile thrift swift-mode rainbow-delimiters protobuf-mode magit-filenotify macrostep js2-mode haskell-mode groovy-mode go-mode coffee-mode cmake-ide cmake-font-lock clojure-mode auto-complete ace-window)))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces
