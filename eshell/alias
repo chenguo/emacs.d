@@ -1,6 +1,5 @@
 alias nil  $*
 alias grep grep --color=auto $*
-;alias ls ls --color=auto $1
 alias l ls -CF
 alias la ls -A
 alias ll ls -alF
@@ -14,5 +13,4 @@ alias clear recenter 0
 alias ll ls -alF
 alias la ls -A
 alias l ls -CF
-alias ls ls $1 --color=auto
 alias grep grep --color=auto $*

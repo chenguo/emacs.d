@@ -49,3 +49,17 @@
 (require 'company-lsp)
 (push 'company-lsp company-backends)
 
+
+;; yaml
+(add-hook 'yaml-mode-hook
+          (lambda ()
+            (highlight-indentation-mode)
+            (highlight-indentation-current-column-mode)))
+
+(add-hook 'graphviz-dot-mode
+          (lambda ()
+            (setq-default graphviz-dot-indent-width 2)))
+
+;; latex
+(require 'tex-fold)
+(add-hook 'LaTeX-mode-hook 'TeX-fold-mode)

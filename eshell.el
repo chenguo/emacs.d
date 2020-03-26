@@ -29,12 +29,13 @@
 ;;             (match-string 1 string))
 ;;         string))))
 
+;; Below no longer necessary
 ;; Replace weird colors
-(defun color-escape-replace (string)
-  (replace-regexp-in-string "\^\[\\\[2K\^\[\\\[0G" "" string))
+;; (defun color-escape-replace (string)
+;;   (replace-regexp-in-string "\^\[\\\[2K\^\[\\\[0G" "" string))
 
-(add-hook 'eshell-preoutput-filter-functions
-          'color-escape-replace)
+;; (add-hook 'eshell-preoutput-filter-functions
+;;           'color-escape-replace)
 
 (setq eshell-aliases-file "~/.emacs.d/eshell/alias")
 
