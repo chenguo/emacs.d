@@ -59,7 +59,3 @@
 (add-hook 'graphviz-dot-mode
           (lambda ()
             (setq-default graphviz-dot-indent-width 2)))
-
-;; latex
-(require 'tex-fold)
-(add-hook 'LaTeX-mode-hook 'TeX-fold-mode)
