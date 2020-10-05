@@ -10,18 +10,11 @@
  (lambda (package)
    (or (package-installed-p package)
        (package-install package)))
- '(clojure-mode
-   cider
-   cmake-font-lock
-   cmake-ide
-   cmake-mode
-   coffee-mode
-   ace-window
+ '(ace-window
    magit
    magit-filenotify
    js2-mode
    protobuf-mode
-   scala-mode
    thrift
    projectile
    smex
@@ -57,8 +50,7 @@
  '(column-number-mode t)
  '(display-time-mode t)
  '(package-selected-packages
-   (quote
-    (py-autopep8 graphviz-dot-mode highlight-indentation indent-tools yaml-mode company-lsp lsp-treemacs tide lsp-mode typescript-mode exec-path-from-shell smex git-commit ido-vertical-mode flx-ido magit cider clojure-mode-extra-font-locking scala-mode projectile thrift swift-mode rainbow-delimiters protobuf-mode magit-filenotify macrostep js2-mode haskell-mode groovy-mode go-mode coffee-mode cmake-ide cmake-font-lock clojure-mode auto-complete ace-window px)))
+   '(py-autopep8 graphviz-dot-mode highlight-indentation indent-tools yaml-mode company-lsp lsp-treemacs tide lsp-mode typescript-mode exec-path-from-shell smex git-commit ido-vertical-mode flx-ido magit cider clojure-mode-extra-font-locking scala-mode projectile thrift swift-mode rainbow-delimiters protobuf-mode magit-filenotify macrostep js2-mode haskell-mode groovy-mode go-mode coffee-mode cmake-ide cmake-font-lock clojure-mode auto-complete ace-window px))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces
