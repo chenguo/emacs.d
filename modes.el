@@ -46,10 +46,6 @@
             (setq-default typescript-indent-level 2)
             (lsp-deferred)))
 
-(require 'company-lsp)
-(push 'company-lsp company-backends)
-
-
 ;; yaml
 (add-hook 'yaml-mode-hook
           (lambda ()

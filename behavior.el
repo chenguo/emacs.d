@@ -48,7 +48,6 @@
 
 (midnight-delay-set 'midnight-delay "4:30am")
 
-
 ;; Projectile mode
 (projectile-mode +1)
 (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
@@ -57,26 +56,6 @@
 ;; GC less often
 ;; 0.76 MB default to 20 MB
 (setq gc-cons-threshold 20000000)
-
-(setq cider-jack-in-default 'lein)
-(setq cider-default-repl-command "lein")
-(define-obsolete-variable-alias 'cider-default-repl-command 'cider-jack-in-default)
-(defcustom cider-jack-in-default (if (executable-find "clojure") 'clojure-cli 'lein)
-  "The default tool to use when doing `cider-jack-in' outside a project.
-This value will only be consulted when no identifying file types, i.e.
-project.clj for leiningen or build.boot for boot, could be found.
-
-As the Clojure CLI is bundled with Clojure itself, it's the default.
-In the absence of the Clojure CLI (e.g. on Windows), we fallback
-to Leiningen."
-  :type '(choice (const 'lein)
-                 (const 'boot)
-                 (const 'clojure-cli)
-                 (const 'shadow-cljs)
-                 (const 'gradle))
-  :group 'cider
-  :safe #'symbolp
-  :package-version '(cider . "0.9.0"))
 
 ;; smex
 (global-set-key (kbd "M-x") 'smex)

@@ -1,4 +1,4 @@
-(load "~/.emacs.d/zenburn-theme.el")
+(load-theme 'zenburn t)
 
 ;; Turn off clunky UI
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode 0))
@@ -62,6 +62,6 @@
      ((< dpi 160) 128)
      (t 175))))
 
-(set-face-attribute 'default nil
-                    :height
-                    (my-preferred-font-size))
+;; (set-face-attribute 'default nil
+;;                     :height
+;;                     (my-preferred-font-size))
