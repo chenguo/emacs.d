@@ -1,6 +1,7 @@
 ; Packages
 (require 'package)
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
+                         ("melpa" . "https://melpa.org/packages/")))
 
 (package-initialize)
 
@@ -29,6 +30,7 @@
    highlight-indentation
    px
    zenburn-theme
+   lsp-ui
    ))
 
 ;; Load settings
@@ -36,10 +38,9 @@
 (load "~/.emacs.d/behavior.el")
 (load "~/.emacs.d/keybind.el")
 (load "~/.emacs.d/ido_cfg.el")
-;(load "~/.emacs.d/cedet_cfg.el")
-;(load "~/.emacs.d/ac_cfg.el")
 (load "~/.emacs.d/hacks.el")
 (load "~/.emacs.d/modes.el")
+(load "~/.emacs.d/lsp-cfg.el")
 (load "~/.emacs.d/eshell.el")
 
 (custom-set-variables
@@ -49,8 +50,9 @@
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
  '(display-time-mode t)
+ '(global-company-mode t)
  '(package-selected-packages
-   '(py-autopep8 graphviz-dot-mode highlight-indentation indent-tools yaml-mode lsp-treemacs tide lsp-mode typescript-mode exec-path-from-shell smex git-commit ido-vertical-mode flx-ido magit cider clojure-mode-extra-font-locking scala-mode projectile thrift swift-mode rainbow-delimiters protobuf-mode magit-filenotify macrostep js2-mode haskell-mode groovy-mode go-mode coffee-mode cmake-ide cmake-font-lock clojure-mode auto-complete ace-window px))
+   '(lsp-ui py-autopep8 graphviz-dot-mode highlight-indentation indent-tools yaml-mode lsp-treemacs tide lsp-mode typescript-mode exec-path-from-shell smex git-commit ido-vertical-mode flx-ido magit cider clojure-mode-extra-font-locking scala-mode projectile thrift swift-mode rainbow-delimiters protobuf-mode magit-filenotify macrostep js2-mode haskell-mode groovy-mode go-mode coffee-mode cmake-ide cmake-font-lock clojure-mode auto-complete ace-window px))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces

@@ -38,14 +38,6 @@
             (setq indent-tabs-mode nil)))
 
 
-;; Typescript mode with LSP
-(require 'lsp-mode)
-(setq lsp-enable-snippet nil)
-(add-hook 'typescript-mode-hook
-          (lambda ()
-            (setq-default typescript-indent-level 2)
-            (lsp-deferred)))
-
 ;; yaml
 (add-hook 'yaml-mode-hook
           (lambda ()

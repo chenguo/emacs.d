@@ -62,6 +62,6 @@
      ((< dpi 160) 128)
      (t 175))))
 
-;; (set-face-attribute 'default nil
-;;                     :height
-;;                     (my-preferred-font-size))
+(set-face-attribute 'default nil
+                    :height
+                    (my-preferred-font-size))
