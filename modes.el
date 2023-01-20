@@ -47,3 +47,12 @@
 (add-hook 'graphviz-dot-mode
           (lambda ()
             (setq-default graphviz-dot-indent-width 2)))
+
+;; tsx hook
+(add-to-list 'auto-mode-alist '("\\.tsx\\'" . typescript-mode))
+
+;; for python
+(use-package pyvenv
+  :ensure t
+  :init
+  (setenv "WORKON_HOME" "~/.pyenv/versions"))
